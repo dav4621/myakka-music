@@ -1,0 +1,102 @@
+:root {
+
+      --bg-color: #202b38;
+      --typewriterSpeed: 3s;
+      --typewriterCharacters: 11;
+
+}
+
+  h1 {
+    color: white;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    overflow-wrap: break-word;
+    display: inline;
+  }
+
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  h1::before {
+    background: #202b38;
+    height: 1.25em;
+    animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+  }
+
+  h1::after {
+    width: 0.125em;
+    background: steelblue;
+    animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms infinite;
+  }
+
+  .subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+logo {
+  align: right;
+  }
+
+.aImageRow {
+  display: flex;
+  white-space: nowrap;
+}
+
+.mugshot {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.college {
+  max-width: 20%;
+  height: 20%;
+  padding-top: 100px;
+  padding-left: 10px;
+}
+
+.awsbadge {
+  max-width: 15%;
+  height: 15%;
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+.columnA {
+  display: flex;
+
+}
