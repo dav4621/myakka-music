@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import TitleLink from '../components/TitleLink.tsx'
-import Water from '@/styles/Water.tsx'
+import TitleLink from '../components/TitleLink'
+import Water from '@/styles/Water'
 
 
 export default function Podcast() {

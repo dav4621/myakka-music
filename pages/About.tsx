@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Water from '@/styles/Water.tsx'
-import TitleLink from '../components/TitleLink.tsx'
+import TitleLink from '../components/TitleLink'
 
 import Mugshot from '../public/mugshot.jpg'
 import AwsBadge from '../public/aws-certified-solutions-architect-associate.png'
