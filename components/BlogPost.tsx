@@ -6,7 +6,7 @@ import Water from '@/styles/Water'
 
 import TitleLink from '../components/TitleLink'
 
-export default function BlogPost {
+export default function BlogPost() {
   return (
     <>
     </>

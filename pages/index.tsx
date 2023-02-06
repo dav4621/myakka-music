@@ -24,7 +24,7 @@ export default function Home() {
 
 	<hr/>
 
-	<h2 align="center">Articles</h2>
+	<h2 className="homeArticlesTitle">Articles</h2>
 	<p>If I find it interesting, I just might write about it...</p>
 
 	<ul>

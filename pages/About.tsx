@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import Water from '@/styles/Water.tsx'
+import Water from '@/styles/Water'
 import TitleLink from '../components/TitleLink'
 
 import Mugshot from '../public/mugshot.jpg'
@@ -19,9 +19,9 @@ export default function About() {
       <hr />
 
       <div className="aImageRow">
-    <Image className="mugshot" src={Mugshot} />
-    <Image className="awsbadge" src={AwsBadge} />
-    <Image className="college" src={College} />
+    <Image className="mugshot" src={Mugshot} alt="should be my face" />
+    <Image className="awsbadge" src={AwsBadge} alt="should be a pointless aws badge" />
+    <Image className="college" src={College} alt="should be an outdated cal logo lol"/>
       </div>
 
       <p>Hello! My name is John Davis, and I am currently a Sales Manager at Guitar Center. Outside of work, I am a freelance IT Professional, focusing in software and the cloud. I have a B.S. in Computer Science from CalU (now PennWest California), and have my Certified Solutions Architect - Associate from Amazon Web Services. When I'm not coding, I'm playing guitar, watching hockey, and lounging at the beach.</p>
