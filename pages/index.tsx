@@ -10,6 +10,7 @@ import TitleLink from '../components/TitleLink'
 export default function Home() {
   return (
     <>
+
 	<TitleLink />
 	<Water />
 	<p>A mix of tech stacks and tone stacks🤘.</p>
@@ -31,6 +32,7 @@ export default function Home() {
 	  <li><Link href="/articles/nov20_22">11/20/22</Link>🎸 Prologue</li>
 
 	</ul>
+
     </>
   )
 }
